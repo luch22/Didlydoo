@@ -14,7 +14,7 @@ function display(data) {
 
   data.forEach((element) => {
     let li = document.createElement("li");
-    li.className = element.name
+    li.className = `${element.name} li_display__event`;
 
     Object.entries(element).forEach(([key, value]) => {
       let div = document.createElement("div");
