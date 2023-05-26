@@ -4,12 +4,17 @@ const main = document.querySelector("main");
 export function displayEventsHtml() {
   getFetch("getAllEvents").then((response) =>
     response.json().then((json) => {
-      display(json);
+      displayEvent(json);
+    })
+  );
+  getFetch("getAllAttendees").then((response) =>
+    response.json().then((json) => {
+      displayAttendees(json);
     })
   );
 }
 
-function display(data) {
+function displayEvent(data) {
   let ul = document.createElement("ul");
 
   data.forEach((element) => {
@@ -21,21 +26,44 @@ function display(data) {
       div.className = key;
 
       if (key == "dates") {
-        let span = document.createElement("span");
-        span.innerHTML = `${key}: `;
-        div.append(span);
+        let table = document.createElement("table");
+        table.append(document.createElement("th"));
+        table.id = element.id;
+
         value.forEach((e) => {
-          let time = document.createElement("time");
-          time.innerHTML = `<br> ${e.date}`;
-          div.append(time);
+          let th = document.createElement("th");
+          th.innerHTML = e.date;
+          table.append(th);
         });
-        li.append(div);
+        div.append(table);
       } else {
         div.innerHTML = `<span>${key}: ${value}</span>`;
-        li.append(div);
       }
+      li.append(div);
     });
     ul.append(li);
   });
   main.append(ul);
+  let day_select = document.getElementById("day-select");
+  day_select.addEventListener("change", (e) => {
+    let displayInput = document.querySelector(".display_input__date");
+    displayInput.innerHTML = "";
+    for (let i = 0; i < day_select.value; i++) {
+      let inputDate = document.createElement("input");
+      inputDate.type = "date";
+      inputDate.id = `date_${i}`;
+      displayInput.append(inputDate);
+    }
+  });
+}
+function displayAttendees(data) {
+  let tables = document.querySelectorAll("table");
+  tables.forEach((t) => {
+    let table = document.getElementById(t.id);
+    data.forEach((attende) => {
+      attende.events.forEach((eve) => {
+        // console.log(eve.id);
+      });
+    });
+  });
 }

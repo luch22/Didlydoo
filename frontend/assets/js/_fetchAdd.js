@@ -11,15 +11,6 @@ export function postFetch(key, value, body) {
     `http://localhost:3000/api/events/${value}/attend`
   );
 
-  if (value == null) {
-    return fetch(ListFetchPost.get(key), {
-      method: "POST",
-      body: body,
-      headers: {
-        "Content-type": "application/json; charset=UTF-8",
-      },
-    });
-  }
   return fetch(ListFetchPost.get(key), {
     method: "POST",
     body: body,
