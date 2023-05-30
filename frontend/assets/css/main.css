@@ -1,26 +1,24 @@
-/* Header */ 
-.form_event{
+/* Header */
+.form_event {
   text-align: center;
   margin-top: 10px;
   margin: 10px;
 }
-.tryfetch{
+
+.tryfetch {
   border-radius: 5px;
   margin-top: 10px;
-  
 }
-.display
+
 ul {
   list-style-type: none;
   padding: 0;
   overflow: hidden;
   display: inline-block;
-  display:list-item;
-  
 }
 
 .li_display__event {
-  background:fixed;
+  background: fixed;
   background-image: url(/frontend/assets/img/background2.jpg);
   display: flex;
   flex-direction: column;
@@ -74,7 +72,4 @@ ul {
   transform: translateY(-4px);
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
   transition: all 0.5s;
-}
-
-/*# sourceMappingURL=main.css.map */
-
+}/*# sourceMappingURL=main.css.map */
