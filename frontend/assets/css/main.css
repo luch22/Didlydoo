@@ -1,13 +1,38 @@
-/* Header */ 
-.form_event{
+/* Header */
+.form_event {
   text-align: center;
   margin-top: 10px;
-  margin: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  border-radius: 10px;
 }
-.tryfetch{
-  border-radius: 5px;
-  margin-top: 10px;
 
+.display_input__date {
+  margin-top: 10px;
+}
+
+.tryfetch {
+  margin-top: 10px;
+  background: inherit;
+  background-clip: padding-box;
+  border-radius: 10px;
+  cursor: pointer;
+  --border: 5px; /* the border width */
+  --slant: 0.7em; /* control the slanted corners */
+  --color: #000000; /* the color */
+  font-size: 15px;
+  padding: 0.4em 1.2em;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  color: var(--color);
+  background: linear-gradient(to bottom left, var(--color) 50%, rgba(0, 0, 0, 0) 50.1%) top right, linear-gradient(to top right, var(--color) 50%, rgba(0, 0, 0, 0) 50.1%) bottom left;
+  background-size: calc(var(--slant) + 1.3 * var(--border)) calc(var(--slant) + 1.3 * var(--border));
+  background-repeat: no-repeat;
+  box-shadow: 0 0 0 200px inset var(--s, rgba(0, 0, 0, 0)), 0 0 0 var(--border) inset var(--color);
+  -webkit-clip-path: polygon(0 0, calc(100% - var(--slant)) 0, 100% var(--slant), 100% 100%, var(--slant) 100%, 0 calc(100% - var(--slant)));
+          clip-path: polygon(0 0, calc(100% - var(--slant)) 0, 100% var(--slant), 100% 100%, var(--slant) 100%, 0 calc(100% - var(--slant)));
+  transition: color var(--t, 0.3s), background-size 0.3s;
 }
 
 ul {
@@ -15,12 +40,14 @@ ul {
   padding: 0;
   overflow: hidden;
   display: inline-block;
-  display:list-item;
-  
+  display: list-item;
+  border-color: #333333;
+  border-radius: 20px;
+  cursor: pointer;
 }
 
 .li_display__event {
-  background:fixed;
+  background: fixed;
   background-image: url(/frontend/assets/img/background2.jpg);
   display: flex;
   flex-direction: column;
@@ -74,7 +101,4 @@ ul {
   transform: translateY(-4px);
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
   transition: all 0.5s;
-}
-
-/*# sourceMappingURL=main.css.map */
-
+}/*# sourceMappingURL=main.css.map */
