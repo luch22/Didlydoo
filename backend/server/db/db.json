@@ -1,5 +1,6 @@
 [
   {
+<<<<<<< HEAD
     "id": "e2ab11e46628",
     "name": "Arnould",
     "author": "Julien A",
@@ -42,6 +43,22 @@
     "created_at": "2023-05-30T07:21:26.240Z",
     "num_modification": 0,
     "last_modification": "2023-05-30T07:21:26.240Z",
+=======
+    "id": "264ddfe8bb00",
+    "name": "azeaze",
+    "author": "aezaz",
+    "description": "azeazeaz",
+    "dates": [
+      "2023-05-26",
+      "2023-05-27",
+      "2023-05-28",
+      "2023-05-29",
+      "2023-05-30"
+    ],
+    "created_at": "2023-05-30T07:03:10.937Z",
+    "num_modification": 0,
+    "last_modification": "2023-05-30T07:03:10.937Z",
+>>>>>>> 82906ad880353cd0520ef5726fa99694e98d7ce0
     "attendees": []
   },
   {

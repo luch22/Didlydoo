@@ -1,4 +1,5 @@
 import { getFetch } from "./_fetchGet.js";
+import { delFetch } from "./_fetchDelete.js";
 let listEvents;
 const main = document.querySelector("main");
 export function displayEventsHtml() {
@@ -20,6 +21,11 @@ function displayEvent(data) {
   data.forEach((element) => {
     let li = document.createElement("li");
     li.className = `${element.name} li_display__event`;
+
+    let deleteButton = document.createElement("button");
+    deleteButton.textContent = "delete";
+    deleteButton.addEventListener("click", () => delFetch(element.id));
+    li.appendChild(deleteButton);
 
     Object.entries(element).forEach(([key, value]) => {
       let div = document.createElement("div");
@@ -58,12 +64,41 @@ function displayEvent(data) {
 }
 function displayAttendees(data) {
   let tables = document.querySelectorAll("table");
-  tables.forEach((t) => {
-    let table = document.getElementById(t.id);
-    data.forEach((attende) => {
-      attende.events.forEach((eve) => {
-        // console.log(eve.id);
-      });
+  data.forEach((e) => {
+    e.events.forEach((event) => {
+      if (event.id == tables.id) {
+        console.log(event);
+      }
+
+      console.log(event);
     });
   });
+
+  // tables.forEach((t) => {
+  //   let table = document.getElementById(t.id);
+  //   data.forEach((attende) => {
+  //     let tr = document.createElement("tr");
+  //     attende.events.forEach((eve) => {
+  //       console.log(eve);
+  //       let tdName = document.createElement("td");
+  //       tdName.innerText = `${attende.name}`;
+  //       if (eve.id === table.id) {
+  //         tr.append(tdName);
+
+  //         let ths = table.querySelectorAll("th");
+  //         ths.forEach((th) => {
+  //           let count = 0;
+  //           eve.dates.forEach((date) => {
+  //             let tdDate = document.createElement("td");
+  //             if (date.date === th.innerText) {
+  //               tdDate.innerText = `${date.available}`;
+  //               tr.append(tdDate);
+  //             }
+  //           });
+  //         });
+  //       }
+  //     });
+  //     table.append(tr);
+  //   });
+  // });
 }

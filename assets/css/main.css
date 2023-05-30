@@ -1,27 +1,11 @@
-/* Header */ 
-.form_event{
-  text-align: center;
-  margin-top: 10px;
-  margin: 10px;
-}
-.tryfetch{
-  border-radius: 5px;
-  margin-top: 10px;
-  
-}
-.display
 ul {
   list-style-type: none;
   padding: 0;
   overflow: hidden;
   display: inline-block;
-  display:list-item;
-  
 }
 
 .li_display__event {
-  background:fixed;
-  background-image: url(/frontend/assets/img/background2.jpg);
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -38,18 +22,18 @@ ul {
   display: none;
 }
 .li_display__event .name {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
   color: #333333;
   margin-bottom: 10px;
 }
 .li_display__event .author {
-  font-size: 18px;
+  font-size: 14px;
   color: #777777;
   margin-bottom: 5px;
 }
 .li_display__event .description {
-  font-size: 15px;
+  font-size: 14px;
   color: #555555;
   margin-bottom: 10px;
 }
@@ -58,8 +42,7 @@ ul {
   color: #999999;
   margin-bottom: 5px;
 }
-.li_display__event .dates table th,
-.li_display__event .dates table td {
+.li_display__event .dates table th {
   width: 120px;
   text-align: center;
   vertical-align: middle;
@@ -74,7 +57,4 @@ ul {
   transform: translateY(-4px);
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
   transition: all 0.5s;
-}
-
-/*# sourceMappingURL=main.css.map */
-
+}/*# sourceMappingURL=main.css.map */
