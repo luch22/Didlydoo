@@ -1,13 +1,13 @@
-/* Header */ 
-.form_event{
+/* Header */
+.form_event {
   text-align: center;
   margin-top: 10px;
   margin: 10px;
 }
-.tryfetch{
+
+.tryfetch {
   border-radius: 5px;
   margin-top: 10px;
-
 }
 
 ul {
@@ -15,12 +15,10 @@ ul {
   padding: 0;
   overflow: hidden;
   display: inline-block;
-  display:list-item;
-  
 }
 
 .li_display__event {
-  background:fixed;
+  background: fixed;
   background-image: url(/frontend/assets/img/background2.jpg);
   display: flex;
   flex-direction: column;
@@ -76,5 +74,20 @@ ul {
   transition: all 0.5s;
 }
 
-/*# sourceMappingURL=main.css.map */
+dialog::backdrop {
+  background: black;
+  opacity: 0.5;
+}
 
+dialog {
+  max-width: 90vw;
+  border: 1px solid black;
+}
+
+.editButton {
+  border-radius: 2px;
+  background-color: white;
+  border: 1px solid black;
+  margin: 5px;
+  box-shadow: 1px 1px 2px grey;
+}/*# sourceMappingURL=main.css.map */

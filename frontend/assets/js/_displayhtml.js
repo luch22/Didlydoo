@@ -1,6 +1,8 @@
 import { getFetch } from "./_fetchGet.js";
 import { delFetch } from "./_fetchDelete.js";
+import { openEditModal } from "./_editEvent.js";
 let listEvents;
+let modal = document.querySelector("dialog");
 const main = document.querySelector("main");
 export function displayEventsHtml() {
   getFetch("getAllEvents").then((response) =>
@@ -23,9 +25,16 @@ function displayEvent(data) {
     li.className = `${element.name} li_display__event`;
 
     let deleteButton = document.createElement("button");
-    deleteButton.textContent = "delete";
+    deleteButton.textContent = "Delete";
     deleteButton.addEventListener("click", () => delFetch(element.id));
     li.appendChild(deleteButton);
+
+    let editButton = document.createElement("button");
+    editButton.classList.add(element.id, "editButton");
+    editButton.textContent = "Edit";
+    editButton.addEventListener("click", () => openEditModal());
+    editButton.addEventListener("click", () => modal.showModal());
+    li.appendChild(editButton);
 
     Object.entries(element).forEach(([key, value]) => {
       let div = document.createElement("div");
