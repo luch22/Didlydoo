@@ -42,7 +42,8 @@ ul {
   color: #999999;
   margin-bottom: 5px;
 }
-.li_display__event .dates table th {
+.li_display__event .dates table th,
+.li_display__event .dates table td {
   width: 120px;
   text-align: center;
   vertical-align: middle;

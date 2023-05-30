@@ -58,12 +58,41 @@ function displayEvent(data) {
 }
 function displayAttendees(data) {
   let tables = document.querySelectorAll("table");
-  tables.forEach((t) => {
-    let table = document.getElementById(t.id);
-    data.forEach((attende) => {
-      attende.events.forEach((eve) => {
-        // console.log(eve.id);
-      });
+  data.forEach((e) => {
+    e.events.forEach((event) => {
+      if (event.id == tables.id) {
+        console.log(event);
+      }
+
+      console.log(event);
     });
   });
+
+  // tables.forEach((t) => {
+  //   let table = document.getElementById(t.id);
+  //   data.forEach((attende) => {
+  //     let tr = document.createElement("tr");
+  //     attende.events.forEach((eve) => {
+  //       console.log(eve);
+  //       let tdName = document.createElement("td");
+  //       tdName.innerText = `${attende.name}`;
+  //       if (eve.id === table.id) {
+  //         tr.append(tdName);
+
+  //         let ths = table.querySelectorAll("th");
+  //         ths.forEach((th) => {
+  //           let count = 0;
+  //           eve.dates.forEach((date) => {
+  //             let tdDate = document.createElement("td");
+  //             if (date.date === th.innerText) {
+  //               tdDate.innerText = `${date.available}`;
+  //               tr.append(tdDate);
+  //             }
+  //           });
+  //         });
+  //       }
+  //     });
+  //     table.append(tr);
+  //   });
+  // });
 }

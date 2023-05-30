@@ -1,10 +1,32 @@
 [
   {
+    "id": "264ddfe8bb00",
+    "name": "azeaze",
+    "author": "aezaz",
+    "description": "azeazeaz",
+    "dates": [
+      "2023-05-26",
+      "2023-05-27",
+      "2023-05-28",
+      "2023-05-29",
+      "2023-05-30"
+    ],
+    "created_at": "2023-05-30T07:03:10.937Z",
+    "num_modification": 0,
+    "last_modification": "2023-05-30T07:03:10.937Z",
+    "attendees": []
+  },
+  {
     "id": "f5b6564b5dc4",
     "name": "My sweet 16",
     "description": "I am going to be 16, let us all party together! Help me pick a date so we can go together",
     "author": "John Doe",
-    "dates": ["2022-03-17", "2022-03-18", "2022-03-21", "2022-03-22"],
+    "dates": [
+      "2022-03-17",
+      "2022-03-18",
+      "2022-03-21",
+      "2022-03-22"
+    ],
     "attendees": [
       {
         "name": "Michou",
