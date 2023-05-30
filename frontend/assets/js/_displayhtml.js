@@ -1,4 +1,5 @@
 import { getFetch } from "./_fetchGet.js";
+import { delFetch } from "./_fetchDelete.js";
 let listEvents;
 const main = document.querySelector("main");
 export function displayEventsHtml() {
@@ -20,6 +21,11 @@ function displayEvent(data) {
   data.forEach((element) => {
     let li = document.createElement("li");
     li.className = `${element.name} li_display__event`;
+
+    let deleteButton = document.createElement("button");
+    deleteButton.textContent = "delete";
+    deleteButton.addEventListener("click", () => delFetch(element.id));
+    li.appendChild(deleteButton);
 
     Object.entries(element).forEach(([key, value]) => {
       let div = document.createElement("div");
