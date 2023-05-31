@@ -25,6 +25,7 @@ function displayEvent(data) {
     li.className = `${element.name} li_display__event`;
 
     let deleteButton = document.createElement("button");
+    deleteButton.classList.add(element.id, "deleteButton");
     deleteButton.textContent = "Delete";
     deleteButton.addEventListener("click", () => delFetch(element.id));
     li.appendChild(deleteButton);

@@ -1,15 +1,16 @@
 [
   {
-    "id": "027dc21f4b9e",
-    "name": "After Work",
+    "id": "9e35c698e2b3",
+    "name": "STF",
     "author": "Julien A",
-    "description": "Gaming room",
+    "description": "Airsoft Day",
     "dates": [
-      "2023-06-04"
+      "2023-05-31",
+      "2023-06-01"
     ],
-    "created_at": "2023-05-30T13:22:00.642Z",
-    "num_modification": 0,
-    "last_modification": "2023-05-30T13:22:00.642Z",
+    "created_at": "2023-05-31T10:03:12.064Z",
+    "num_modification": 1,
+    "last_modification": "2023-05-31T10:03:18.597Z",
     "attendees": []
   }
 ]
