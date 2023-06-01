@@ -1,3 +1,18 @@
+
 # Didlydoo
 
-## Bienvenue sur notre projet collaboratif entre Julien Arnould, Sylvain Jacobs et Luciano Ciarrocchi
+Creating a event planner, allowing people to indicate when they are available.
+https://alphit7.github.io/Project-planner/
+
+
+## Authors
+
+
+- [Luciano Ciarrocchi](https://github.com/luch22)
+- [Julien Arnould](https://github.com/Arnould-Julien)
+- [Sylvain Jacobs](https://www.github.com/Alphit7)
+
+
+
+
+![App Screenshot](assets/img/Screenshot.png)
