@@ -15,4 +15,4 @@ https://alphit7.github.io/Project-planner/
 
 
 
-![App Screenshot](./assets/img/Screenshot.png)
+![App Screenshot](frontend/assets/img/Screenshot.png)
