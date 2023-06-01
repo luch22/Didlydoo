@@ -2,7 +2,6 @@
 # Didlydoo
 
 Creating a event planner, allowing people to indicate when they are available.
-https://alphit7.github.io/Project-planner/
 
 
 ## Authors
